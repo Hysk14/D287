@@ -10,7 +10,7 @@ For this project, you will use the Integrated Development Environment (IDE) link
 ## Project Changes
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 
-Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required.
+Changes:
 
 File Name: mainscreen.html
 Line Number: 14
