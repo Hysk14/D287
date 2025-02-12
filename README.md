@@ -24,6 +24,10 @@ File Name: mainscreen.html
 Line Number: 21
 Change: changed h2 from "Parts" to "PC Parts"
 
+File Name: mainscreen.html
+Line Number: 53
+Change: changed h2 from "Products" to "Pre-built PC's"
+
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
 
