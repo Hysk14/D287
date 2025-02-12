@@ -20,6 +20,10 @@ File Name: mainscreen.html
 Line Number: 19
 Change: changed h1 from "Shop" to "Kaio's PC Shop"
 
+File Name: mainscreen.html
+Line Number: 21
+Change: changed h2 from "Parts" to "PC Parts"
+
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
 
