@@ -52,6 +52,10 @@ File Name: about.html
 Line Number: 19
 Change: added "text-center" class to <h1> tag
 
+File Name: about.html
+Line Number: 19
+Change: added "mt-5 display-1" class to <h1> tag for top margin and larger text size
+
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 
