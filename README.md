@@ -30,6 +30,19 @@ Change: changed h2 from "Products" to "Pre-built PC's"
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
+Changes:
+
+File Name: about.html
+Line Number: 14
+Change: added "About Us" title
+
+File Name: about.html
+Line Number: 16, 22
+Change: added <body> tag
+
+File Name: about.html
+Line Number: 18, 20
+Change: added <div> tag with "container" class
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
