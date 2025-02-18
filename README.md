@@ -64,6 +64,10 @@ File Name: about.html
 Line Number: 23
 Change: changed all text color to white
 
+File Name: about.html
+Line Number: 34-37
+Change: update "about us" paragraph
+
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 
