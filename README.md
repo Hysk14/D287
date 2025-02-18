@@ -68,6 +68,10 @@ File Name: about.html
 Line Number: 34-37
 Change: update "about us" paragraph text and styling
 
+File Name: about.html
+Line Number: 17-31
+Change: customized paragraph, h1, and border elements
+
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 
