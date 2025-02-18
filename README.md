@@ -38,23 +38,27 @@ Change: added "About Us" title
 
 File Name: about.html
 Line Number: 16, 22
-Change: added <body> tag
+Change: added body tag
 
 File Name: about.html
 Line Number: 18, 20
-Change: added <div> tag with "container" class
+Change: added div tag with "container" class
 
 File Name: about.html
 Line Number: 19
-Change: added <h1> tag with "About Us"
+Change: added h1 tag with "About Us"
 
 File Name: about.html
 Line Number: 19
-Change: added "text-center" class to <h1> tag
+Change: added "text-center" class to h1 tag
 
 File Name: about.html
 Line Number: 19
-Change: added "mt-5 display-1" class to <h1> tag for top margin and larger text size
+Change: added "mt-5 display-1" class to h1 tag for top margin and larger text size
+
+File Name: about.html
+Line Number: 16-24
+Change: added style tag, body, and background code to set background image for about page
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
