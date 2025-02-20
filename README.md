@@ -88,6 +88,10 @@ File Name: mainscreen.html
 Line Number: 35
 Change: added button for navigation from home page to "about us" page
 
+File Name: about.html
+Line Number: 46, 48
+Change: centered text for home navigation button, added button for navigation from about us page to "home" page
+
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 
