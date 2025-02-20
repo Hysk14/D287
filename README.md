@@ -28,6 +28,10 @@ File Name: mainscreen.html
 Line Number: 53
 Change: changed h2 from "Products" to "Pre-built PC's"
 
+File Name: mainscreen.html
+Line Number: 16-25
+Change: added style tags, background image, and altered text color to "white"
+
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
 Changes:
