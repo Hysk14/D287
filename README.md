@@ -84,6 +84,10 @@ File Name: AboutController.java
 Line Number: 7-15
 Change: added Controller to handle/map "about" page
 
+File Name: mainscreen.html
+Line Number: 35
+Change: added button for navigation from home page to "about us" page
+
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 
