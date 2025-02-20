@@ -32,6 +32,10 @@ File Name: mainscreen.html
 Line Number: 16-25
 Change: added style tags, background image, and altered text color to "white"
 
+File Name: mainscreen.html
+Line Number: 26
+Change: added group selector for th (table header) and td (table data) for styling
+
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
 Changes:
