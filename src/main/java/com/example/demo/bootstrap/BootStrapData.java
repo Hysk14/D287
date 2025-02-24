@@ -55,6 +55,47 @@ public class BootStrapData implements CommandLineRunner {
 
         System.out.println(thePart.getCompanyName());
         */
+
+        OutsourcedPart nvidiaGPU = new OutsourcedPart();
+        nvidiaGPU.setName("GPU");
+        nvidiaGPU.setCompanyName("Nvidia");
+        nvidiaGPU.setInv(7);
+        nvidiaGPU.setPrice(499.99);
+        nvidiaGPU.setId(100L);
+        outsourcedPartRepository.save(nvidiaGPU);
+
+        OutsourcedPart amdCpu = new OutsourcedPart();
+        amdCpu.setName("CPU");
+        amdCpu.setCompanyName("AMD");
+        amdCpu.setInv(10);
+        amdCpu.setPrice(374.99);
+        amdCpu.setId(200L);
+        outsourcedPartRepository.save(amdCpu);
+
+        OutsourcedPart evgaPSU = new OutsourcedPart();
+        evgaPSU.setName("PSU");
+        evgaPSU.setCompanyName("EVGA");
+        evgaPSU.setInv(16);
+        evgaPSU.setPrice(149.99);
+        evgaPSU.setId(300L);
+        outsourcedPartRepository.save(evgaPSU);
+
+        OutsourcedPart corsairRAM = new OutsourcedPart();
+        corsairRAM.setName("RAM");
+        corsairRAM.setCompanyName("Corsair");
+        corsairRAM.setInv(8);
+        corsairRAM.setPrice(99.99);
+        corsairRAM.setId(400L);
+        outsourcedPartRepository.save(corsairRAM);
+
+        OutsourcedPart samsungSSD = new OutsourcedPart();
+        samsungSSD.setName("SSD");
+        samsungSSD.setCompanyName("Samsung");
+        samsungSSD.setInv(30);
+        samsungSSD.setPrice(319.99);
+        samsungSSD.setId(500L);
+        outsourcedPartRepository.save(samsungSSD);
+
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
             System.out.println(part.getName()+" "+part.getCompanyName());
