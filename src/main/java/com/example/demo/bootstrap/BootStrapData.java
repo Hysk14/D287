@@ -108,6 +108,17 @@ public class BootStrapData implements CommandLineRunner {
         productRepository.save(unicycle);
         */
 
+        Product preBuiltPC_1 = new Product("Pre-Built PC 1", 499.99, 10);
+        productRepository.save(preBuiltPC_1);
+        Product preBuiltPC_2 = new Product("Pre-Built PC 2", 599.99, 7);
+        productRepository.save(preBuiltPC_2);
+        Product preBuiltPC_3 = new Product("Pre-Built PC 3", 699.99, 5);    
+        productRepository.save(preBuiltPC_3);
+        Product preBuiltPC_4 = new Product("Pre-Built PC 4", 999.99, 3);
+        productRepository.save(preBuiltPC_4);
+        Product preBuiltPC_5 = new Product("Pre-Built PC 5", 1499.99, 2);
+        productRepository.save(preBuiltPC_5);
+
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());
         System.out.println(productRepository.findAll());
