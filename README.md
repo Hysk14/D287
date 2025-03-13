@@ -102,6 +102,10 @@ File Name: BootStrapData.java
 Line Number: 111-120
 Change: added 5 products to inventory
 
+File Name: BootStrapData.java
+Line Number: 58-106
+Change: Added if() statement to check if part/product exists before creating to avoid duplicate entries
+
 Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part.
 
 
