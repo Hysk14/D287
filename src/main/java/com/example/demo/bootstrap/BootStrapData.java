@@ -55,46 +55,55 @@ public class BootStrapData implements CommandLineRunner {
 
         System.out.println(thePart.getCompanyName());
         */
+        if(outsourcedPartRepository.count()==0){
+            OutsourcedPart nvidiaGPU = new OutsourcedPart();
+            nvidiaGPU.setName("GPU");
+            nvidiaGPU.setCompanyName("Nvidia");
+            nvidiaGPU.setInv(7);
+            nvidiaGPU.setPrice(499.99);
+            nvidiaGPU.setId(100L);
+            outsourcedPartRepository.save(nvidiaGPU);
+        }
 
-        OutsourcedPart nvidiaGPU = new OutsourcedPart();
-        nvidiaGPU.setName("GPU");
-        nvidiaGPU.setCompanyName("Nvidia");
-        nvidiaGPU.setInv(7);
-        nvidiaGPU.setPrice(499.99);
-        nvidiaGPU.setId(100L);
-        outsourcedPartRepository.save(nvidiaGPU);
+        if(outsourcedPartRepository.count()==0){
+            OutsourcedPart amdCpu = new OutsourcedPart();
+            amdCpu.setName("CPU");
+            amdCpu.setCompanyName("AMD");
+            amdCpu.setInv(10);
+            amdCpu.setPrice(374.99);
+            amdCpu.setId(200L);
+            outsourcedPartRepository.save(amdCpu);
+        }
 
-        OutsourcedPart amdCpu = new OutsourcedPart();
-        amdCpu.setName("CPU");
-        amdCpu.setCompanyName("AMD");
-        amdCpu.setInv(10);
-        amdCpu.setPrice(374.99);
-        amdCpu.setId(200L);
-        outsourcedPartRepository.save(amdCpu);
+        if(outsourcedPartRepository.count()==0){
+            OutsourcedPart evgaPSU = new OutsourcedPart();
+            evgaPSU.setName("PSU");
+            evgaPSU.setCompanyName("EVGA");
+            evgaPSU.setInv(16);
+            evgaPSU.setPrice(149.99);
+            evgaPSU.setId(300L);
+            outsourcedPartRepository.save(evgaPSU);
+        }
 
-        OutsourcedPart evgaPSU = new OutsourcedPart();
-        evgaPSU.setName("PSU");
-        evgaPSU.setCompanyName("EVGA");
-        evgaPSU.setInv(16);
-        evgaPSU.setPrice(149.99);
-        evgaPSU.setId(300L);
-        outsourcedPartRepository.save(evgaPSU);
+        if(outsourcedPartRepository.count()==0){
+            OutsourcedPart corsairRAM = new OutsourcedPart();
+            corsairRAM.setName("RAM");
+            corsairRAM.setCompanyName("Corsair");
+            corsairRAM.setInv(8);
+            corsairRAM.setPrice(99.99);
+            corsairRAM.setId(400L);
+            outsourcedPartRepository.save(corsairRAM);
+        }
 
-        OutsourcedPart corsairRAM = new OutsourcedPart();
-        corsairRAM.setName("RAM");
-        corsairRAM.setCompanyName("Corsair");
-        corsairRAM.setInv(8);
-        corsairRAM.setPrice(99.99);
-        corsairRAM.setId(400L);
-        outsourcedPartRepository.save(corsairRAM);
-
-        OutsourcedPart samsungSSD = new OutsourcedPart();
-        samsungSSD.setName("SSD");
-        samsungSSD.setCompanyName("Samsung");
-        samsungSSD.setInv(30);
-        samsungSSD.setPrice(319.99);
-        samsungSSD.setId(500L);
-        outsourcedPartRepository.save(samsungSSD);
+        if(outsourcedPartRepository.count()==0){
+            OutsourcedPart samsungSSD = new OutsourcedPart();
+            samsungSSD.setName("SSD");
+            samsungSSD.setCompanyName("Samsung");
+            samsungSSD.setInv(30);
+            samsungSSD.setPrice(319.99);
+            samsungSSD.setId(500L);
+            outsourcedPartRepository.save(samsungSSD);
+        }
 
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
@@ -108,17 +117,27 @@ public class BootStrapData implements CommandLineRunner {
         productRepository.save(unicycle);
         */
 
-        Product preBuiltPC_1 = new Product("Pre-Built PC 1", 499.99, 10);
-        productRepository.save(preBuiltPC_1);
-        Product preBuiltPC_2 = new Product("Pre-Built PC 2", 599.99, 7);
-        productRepository.save(preBuiltPC_2);
-        Product preBuiltPC_3 = new Product("Pre-Built PC 3", 699.99, 5);    
-        productRepository.save(preBuiltPC_3);
-        Product preBuiltPC_4 = new Product("Pre-Built PC 4", 999.99, 3);
-        productRepository.save(preBuiltPC_4);
-        Product preBuiltPC_5 = new Product("Pre-Built PC 5", 1499.99, 2);
+        if(productRepository.count()==0){
+            Product preBuiltPC_1 = new Product("Pre-Built PC 1", 499.99, 10);
+            productRepository.save(preBuiltPC_1);
+        }
+        if(productRepository.count()==0){
+            Product preBuiltPC_2 = new Product("Pre-Built PC 2", 599.99, 7);
+            productRepository.save(preBuiltPC_2);
+        }
+        if(productRepository.count()==0){
+            Product preBuiltPC_3 = new Product("Pre-Built PC 3", 699.99, 5);    
+            productRepository.save(preBuiltPC_3);
+        }
+        if(productRepository.count()==0){
+            Product preBuiltPC_4 = new Product("Pre-Built PC 4", 999.99, 3);
+            productRepository.save(preBuiltPC_4);
+        }
+        if(productRepository.count()==0){
+            Product preBuiltPC_5 = new Product("Pre-Built PC 5", 1499.99, 2);
         productRepository.save(preBuiltPC_5);
-
+        }
+        
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());
         System.out.println(productRepository.findAll());
