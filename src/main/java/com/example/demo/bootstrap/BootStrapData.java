@@ -50,8 +50,8 @@ public class BootStrapData implements CommandLineRunner {
         }
 
         
-        int partCount = outsourcedPartRepository.count();
-        int productCount = productRepository.count();
+        long partCount = outsourcedPartRepository.count();
+        long productCount = productRepository.count();
 
         if (partCount == 0 && productCount == 0) {
             
