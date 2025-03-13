@@ -39,7 +39,6 @@ public class BootStrapData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
         boolean clearDatabaseForTesting = true;
 
         if (clearDatabaseForTesting) {
@@ -49,24 +48,13 @@ public class BootStrapData implements CommandLineRunner {
             partRepository.deleteAll();
             System.out.println("Database cleared.");
         }
-        /*
-         * OutsourcedPart o= new OutsourcedPart();
-         * o.setCompanyName("Western Governors University");
-         * o.setName("out test");
-         * o.setInv(5);
-         * o.setPrice(20.0);
-         * o.setId(100L);
-         * outsourcedPartRepository.save(o);
-         * OutsourcedPart thePart=null;
-         * List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>)
-         * outsourcedPartRepository.findAll();
-         * for(OutsourcedPart part:outsourcedParts){
-         * if(part.getName().equals("out test"))thePart=part;
-         * }
-         * 
-         * System.out.println(thePart.getCompanyName());
-         */
-        if (outsourcedPartRepository.count() == 0) {
+
+        
+        int partCount = outsourcedPartRepository.count();
+        int productCount = productRepository.count();
+
+        if (partCount == 0 && productCount == 0) {
+            
             OutsourcedPart nvidiaGPU = new OutsourcedPart();
             nvidiaGPU.setName("GPU");
             nvidiaGPU.setCompanyName("Nvidia");
@@ -74,9 +62,7 @@ public class BootStrapData implements CommandLineRunner {
             nvidiaGPU.setPrice(499.99);
             nvidiaGPU.setId(100L);
             outsourcedPartRepository.save(nvidiaGPU);
-        }
 
-        if (outsourcedPartRepository.count() == 0) {
             OutsourcedPart amdCpu = new OutsourcedPart();
             amdCpu.setName("CPU");
             amdCpu.setCompanyName("AMD");
@@ -84,9 +70,7 @@ public class BootStrapData implements CommandLineRunner {
             amdCpu.setPrice(374.99);
             amdCpu.setId(200L);
             outsourcedPartRepository.save(amdCpu);
-        }
 
-        if (outsourcedPartRepository.count() == 0) {
             OutsourcedPart evgaPSU = new OutsourcedPart();
             evgaPSU.setName("PSU");
             evgaPSU.setCompanyName("EVGA");
@@ -94,9 +78,7 @@ public class BootStrapData implements CommandLineRunner {
             evgaPSU.setPrice(149.99);
             evgaPSU.setId(300L);
             outsourcedPartRepository.save(evgaPSU);
-        }
 
-        if (outsourcedPartRepository.count() == 0) {
             OutsourcedPart corsairRAM = new OutsourcedPart();
             corsairRAM.setName("RAM");
             corsairRAM.setCompanyName("Corsair");
@@ -104,9 +86,7 @@ public class BootStrapData implements CommandLineRunner {
             corsairRAM.setPrice(99.99);
             corsairRAM.setId(400L);
             outsourcedPartRepository.save(corsairRAM);
-        }
 
-        if (outsourcedPartRepository.count() == 0) {
             OutsourcedPart samsungSSD = new OutsourcedPart();
             samsungSSD.setName("SSD");
             samsungSSD.setCompanyName("Samsung");
@@ -114,37 +94,19 @@ public class BootStrapData implements CommandLineRunner {
             samsungSSD.setPrice(319.99);
             samsungSSD.setId(500L);
             outsourcedPartRepository.save(samsungSSD);
-        }
 
-        List<OutsourcedPart> outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
-        for (OutsourcedPart part : outsourcedParts) {
-            System.out.println(part.getName() + " " + part.getCompanyName());
-        }
-
-        /*
-         * Product bicycle= new Product("bicycle",100.0,15);
-         * Product unicycle= new Product("unicycle",100.0,15);
-         * productRepository.save(bicycle);
-         * productRepository.save(unicycle);
-         */
-
-        if (productRepository.count() == 0) {
             Product preBuiltPC_1 = new Product("Pre-Built PC 1", 499.99, 10);
             productRepository.save(preBuiltPC_1);
-        }
-        if (productRepository.count() == 0) {
+
             Product preBuiltPC_2 = new Product("Pre-Built PC 2", 599.99, 7);
             productRepository.save(preBuiltPC_2);
-        }
-        if (productRepository.count() == 0) {
+
             Product preBuiltPC_3 = new Product("Pre-Built PC 3", 699.99, 5);
             productRepository.save(preBuiltPC_3);
-        }
-        if (productRepository.count() == 0) {
+
             Product preBuiltPC_4 = new Product("Pre-Built PC 4", 999.99, 3);
             productRepository.save(preBuiltPC_4);
-        }
-        if (productRepository.count() == 0) {
+
             Product preBuiltPC_5 = new Product("Pre-Built PC 5", 1499.99, 2);
             productRepository.save(preBuiltPC_5);
         }
@@ -154,6 +116,5 @@ public class BootStrapData implements CommandLineRunner {
         System.out.println(productRepository.findAll());
         System.out.println("Number of Parts" + partRepository.count());
         System.out.println(partRepository.findAll());
-
     }
 }
