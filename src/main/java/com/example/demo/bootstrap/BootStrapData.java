@@ -58,6 +58,8 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart nvidiaGPU = new OutsourcedPart();
             nvidiaGPU.setName("GPU");
             nvidiaGPU.setCompanyName("Nvidia");
+            nvidiaGPU.setMinInv(3);
+            nvidiaGPU.setMaxInv(15);
             nvidiaGPU.setInv(7);
             nvidiaGPU.setPrice(499.99);
             nvidiaGPU.setId(100L);
@@ -66,6 +68,8 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart amdCpu = new OutsourcedPart();
             amdCpu.setName("CPU");
             amdCpu.setCompanyName("AMD");
+            amdCpu.setMinInv(3);
+            amdCpu.setMaxInv(15);
             amdCpu.setInv(10);
             amdCpu.setPrice(374.99);
             amdCpu.setId(200L);
@@ -74,7 +78,9 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart evgaPSU = new OutsourcedPart();
             evgaPSU.setName("PSU");
             evgaPSU.setCompanyName("EVGA");
-            evgaPSU.setInv(16);
+            evgaPSU.setMinInv(5);
+            evgaPSU.setMaxInv(15);
+            evgaPSU.setInv(15);
             evgaPSU.setPrice(149.99);
             evgaPSU.setId(300L);
             outsourcedPartRepository.save(evgaPSU);
@@ -82,7 +88,9 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart corsairRAM = new OutsourcedPart();
             corsairRAM.setName("RAM");
             corsairRAM.setCompanyName("Corsair");
-            corsairRAM.setInv(8);
+            corsairRAM.setMinInv(10);
+            corsairRAM.setMaxInv(40);
+            corsairRAM.setInv(20);
             corsairRAM.setPrice(99.99);
             corsairRAM.setId(400L);
             outsourcedPartRepository.save(corsairRAM);
@@ -90,6 +98,8 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart samsungSSD = new OutsourcedPart();
             samsungSSD.setName("SSD");
             samsungSSD.setCompanyName("Samsung");
+            samsungSSD.setMinInv(10);
+            samsungSSD.setMaxInv(40);
             samsungSSD.setInv(30);
             samsungSSD.setPrice(319.99);
             samsungSSD.setId(500L);
