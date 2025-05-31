@@ -104,6 +104,9 @@ public abstract class Part implements Serializable {
         this.products = products;
     }
 
+    public boolean isInventoryValid() {
+        return this.inv >= this.minInv && this.inv <= this.maxInv;}
+
     public String toString(){
         return this.name;
     }
