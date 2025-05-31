@@ -184,6 +184,10 @@ the maximum and minimum values.
   Line Numbers: 6
   Changes: changed datasource.url to reflect name changes to D287
 
+- File Name: Part.java
+  Line Numbers: 107, 108
+  Changes: added boolean method to check if inventory count is between or equal to min/max values
+
 H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
 • Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum
 number of parts.
