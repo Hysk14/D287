@@ -140,6 +140,10 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
   Line Number: 31-34
   Change: added fields for minimum/maximum inventory
 
+- File Name: Part.java
+  Line Number: 50, 55, 56
+  Change: added minInv/maxInv to Part constructor parameters, assigned parameters to instance variables
+
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 •  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
 •  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
