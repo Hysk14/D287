@@ -148,6 +148,10 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
   Line Number: 90-97
   Change: added setter/getter methods for minInv/maxInv
 
+- File Name: BootStrapData.java
+  Line Number: 61, 62, 71, 72, 81, 82, 91, 92, 101, 102
+  Change: set min/max inventory values
+
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 •  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
 •  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
