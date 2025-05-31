@@ -121,12 +121,12 @@ F.  Add a “Buy Now” button to your product list. Your “Buy Now” button m
 
 - Updated README.md
 - File Name: mainscreen.html
-  Line Number:65, 102
+  Line Number: 65, 102
   Change: added visual ONLY "Buy Now" button for both parts and products.
 
 - Updated README.md
 - File Name: mainscreen.html
-  Line Number:65
+  Line Number: 65
   Change: removed "Buy Now" button from parts table
 
 G.  Modify the parts to track maximum and minimum inventory by doing the following:
@@ -136,6 +136,9 @@ G.  Modify the parts to track maximum and minimum inventory by doing the followi
 •  Rename the file the persistent storage is saved to.
 •  Modify the code to enforce that the inventory is between or at the minimum and maximum value.
 
+- File Name: Part.java 
+  Line Number: 31-34
+  Change: added fields for minimum/maximum inventory
 
 H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 •  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
