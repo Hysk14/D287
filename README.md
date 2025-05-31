@@ -180,6 +180,10 @@ the maximum and minimum values.
   Line Numbers: 33-43
   Changes: added fields for min/maxInv entry
 
+- File Name: application.properties
+  Line Numbers: 6
+  Changes: changed datasource.url to reflect name changes to D287
+
 H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
 • Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum
 number of parts.
