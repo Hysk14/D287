@@ -188,12 +188,21 @@ the maximum and minimum values.
   Line Numbers: 107, 108
   Changes: added boolean method to check if inventory count is between or equal to min/max values
 
+- File Name: AddOutsourcedPartController.java 
+  Line Numbers: 44-46
+  Changes: added if statement to produce error message if inventory is not within valid range
+
 H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
 • Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum
 number of parts.
 • Display error messages for low inventory when adding and updating products lowers the part inventory below the
 minimum.
 • Display error messages when adding and updating parts if the inventory is greater than the maximum.
+
+- File Name: AddInhousePartController.java
+  Line Numbers: 43-45, 47-49
+  Changes: added if statements to check if inventory meets min/max requirements;
+  produces error message tailored to inventory error
 
 I. Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
