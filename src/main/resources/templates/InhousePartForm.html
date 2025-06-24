@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Inhouse Part Detail</h1>
-<form action="#" th:action="@{/showFormAddInPart}" th:object="${inhousepart}" method="POST" }>
+<form action="#" th:action="@{/showFormAddInPart}" th:object="${inhousepart}" method="POST">
 
     <!-- Add hidden form field to handle update -->
     <p><input type="hidden" th:field="*{id}"/></p>
@@ -34,11 +34,11 @@
         <label for="minInv">Minimum Inventory:</label>
         <input type="text" th:field="*{minInv}" placeholder="Minimum Inventory" class="form-control mb-4 col-4"/>
     </p>
+
     <p>
         <label for="maxInv">Maximum Inventory:</label>
         <input type="text" th:field="*{maxInv}" placeholder="Maximum Inventory" class="form-control mb-4 col-4"/>
     </p>
-
 
     <p>
         <label for="partId">PartID:</label>
@@ -47,9 +47,6 @@
 
     <p><input type="submit" value="Submit"/></p>
 </form>
-<p>
-    <errors path="price" cssClass="" error/>
-<p>
 
     <a href="http://localhost:8080/">Link
         to Main Screen</a>
