@@ -204,6 +204,11 @@ minimum.
   Changes: added if statements to check if inventory meets min/max requirements;
   produces error message tailored to inventory error
 
+- File Name: AddOutsourcedPartController.java
+  Line Numbers: 44-46, 48-50
+  Changes: added if statements to check if inventory meets min/max requirements;
+  produces error message tailored to inventory error
+
 I. Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
 J. Remove the class files for any unused validators in order to clean your code.
