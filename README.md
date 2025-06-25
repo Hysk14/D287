@@ -216,4 +216,8 @@ minimum.
 
 I. Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
+- File Name: PartTest.java
+  Line Numbers: 160-168, 170-177
+  Changes: added tests for setting/getting minimum/maximum part inventory
+
 J. Remove the class files for any unused validators in order to clean your code.
